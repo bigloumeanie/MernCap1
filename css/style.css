@@ -32,7 +32,7 @@ background-color: #000000;
     padding:0;
 }
 
-.logo {
+#logo {
     display: flex;
     height: 100%;
     width: 100%;
@@ -45,27 +45,56 @@ background-color: #000000;
     padding:0;
 }
 
-h1:hover {
+.h1 {
     display:flex;
+}
+
+p:hover {
+    display:block;
     justify-content: center;
     height: 100%;
     width: 100%;
     color: #20ffb1;
     font-style: italic;
-    text-shadow: #20ffb1;
+    text-shadow:red;
 }
 
-.h1 {
-    display:flex;
-
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
 }
+
+.topnav a {
+    float:left;
+    display: block;
+    color: #ffffff;
+    font-family: Lobster;
+    text-align: center;
+    padding:14px 6px;
+    font-size: 2em;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color:#20ffb1;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
 
 #navmenu {
     display: block;
     justify-content:center;
 }
 
-.topnav {
+.navbar-nav {
     display:flex;
     justify-content:center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -75,6 +104,15 @@ h1:hover {
     background:none;
     margin: 10px;
     padding: 10px;
+}
+
+.navbar-nav:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-nav:visited {
+    color:aquamarine
 }
 
 .nav-item {
@@ -115,13 +153,8 @@ ul li:hover {
     font-style: normal;
 }
 
-.topnav:link {
-    color: #000000;
-    text-decoration: none;
-}
+.jumbotron-fluid > .container {
 
-.topnav:visited {
-    color:aquamarine
 }
 
 .wallpaper {
@@ -137,11 +170,13 @@ ul li:hover {
     display:flex;
     font-family: Lobster, lobster-regular;
     color:white;
-    position:relative;
     justify-content: center;
+    font-size: 30px;
 }
 
-.footer p {
-    font-size: 30px;
+.footer p:hover {
+    font-size: 1em;
     font-style: italic;
+    color:#20ffb1;
+    justify-content: center;
 }
