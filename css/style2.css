@@ -5,7 +5,7 @@
 }
 
 html body {
-background-color: #000000;
+background-color: #ffffff;
 }
 
 .container-fluid {
@@ -37,6 +37,7 @@ background-color: #000000;
     font-family: Lobster, Lobster-Regular;
     font-size: 5.5vh;
     color:#ffffff;
+    background-color: #000000;
     top:0
 }
 #
@@ -204,9 +205,17 @@ ul li:hover {
     font-style: normal;
 }
 
-.jumbotron-fluid > .container {
+/* Set the size of the div element that contains the map */
+#map {
+    display:inline;
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+  }
 
-}
+.iframe {
+    display:flex
+    /*style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"
+*/}
 
 .wallpaper {
     display:flex;

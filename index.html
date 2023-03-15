@@ -15,7 +15,59 @@
         <body>
             <div class="container-fluid" id="topmenu">
                 <div class="container">
-                    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div id="header">
+                            <h1><p id="logo">Luigi's Pizzeria</p></h1>
+                    </div>
+                    <nav class="topnav" id="myTopnav">
+                        <a href="/index.html">Home</a>
+                        <a href="/locations.html">Locations</a>
+                        <a href="/pizza.html">Pizza!</a>
+                        <a href="/aboutus.html">AboutUs</a>
+                        <a href="/register.html">Register</a>
+                        <a href="/login.html">Login</a>
+
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!--Jumbotron-->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-med">
+                    <img class="wallpaper" src="images/pizzawp.jpg" alt="Pizza Wallpaper">
+                </div>
+            </div>
+
+            <!--Form for Registering -->
+
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+                </script>
+        </body>
+    <div class="footer">
+        <a class="nav-link" href="/index.html" aria-current="page">Home</a>
+        <p>est 2023</p>
+        <form>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email" name="email">
+        </form>
+    </div>
+</html>
+ <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
                         <div class="container" id="navmenu">
                                 <nav class="navbar-nav">
                                     <ul class="topnav-buttons" role="navigation">
@@ -36,50 +88,3 @@
                                     </ul>
                                 </nav>
                             -->
-                    <div id="header">
-                            <h1><p>Luigi's Pizzeria</p></h1>
-                    </div>
-                    <nav class="topnav" id="myTopnav">
-                        <a href="#home">Home</a>
-                        <a href="#locations">Locations</a>
-                        <a href="#pizza">Pizza!</a>
-                        <a href="#about">AboutUs</a>
-                        <a href="#register">Register</a>
-                        <a href="#login">Login</a>
-
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
-                </div>
-            </div>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container-med">
-                    <img class="wallpaper" src="images/pizzawp.jpg" alt="Pizza Wallpaper">
-                </div>
-            </div>
-
-            <form>
-                <label for="fname">FirstName:</label>
-            <br>
-                <input type="text" id="fname" name="fname">
-            <br>
-                <label for="lname">LastName:</label>
-            <br>
-                <input type="text" id="lname" name="lname">
-        </form>
-            <script>
-                function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "topnav") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "topnav";
-                  }
-                }
-                </script>
-        </body>
-    <div class="footer">
-        <p>est 2023</p>
-    </div>
-</html>
