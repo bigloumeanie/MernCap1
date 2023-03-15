@@ -7,6 +7,7 @@
             <title>Welcome to Luigi's Pizzeria</title>
             <link rel="stylesheet" href="css/style.css">
             <link rel="stylesheet" href="css/theme.css">
+            <script src="js/myscript.js"></script>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 
             <!-- <link rel="stylesheet" href="fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf" type="text/css"> -->
@@ -38,41 +39,25 @@
                             -->
                     <div class="header">
                         <div id="logo">
-                            <h1><p>Luigi's Pizzeria</p></h1>
+                            <h1><p><a class="homepage" href="index.html">Luigi's Pizzeria</a></p></h1>
+                        
+                        <div class="topnav" id="myTopnav">
+                            <a href="#home" class="active">Home</a>
+                            <a href="#locations">Locations</a>
+                            <a href="#pizza">Pizza!</a>
+                            <a href="#about">About Us</a>
+                            <a href="#register">Register</a>
+                            <a href="#login">Login</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="topnav" id="myTopnav">
-                        <a href="#home" class="active">Home</a>
-                        <a href="#locations">Locations</a>
-                        <a href="#pizza">Pizza!</a>
-                        <a href="#about">About Us</a>
-                        <a href="#register">Register</a>
-                        <a href="#login">Login</a>
-
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
-                    
-                    
-                
-                
                 </div>
-            </div>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <img class="wallpaper" src="images/pizzawp.jpg" alt="Pizza Wallpaper">
             </div>
-
-            <form>
-                <label for="fname">FirstName:</label>
-            <br>
-                <input type="text" id="fname" name="fname">
-            <br>
-                <label for="lname">LastName:</label>
-            <br>
-                <input type="text" id="lname" name="lname">
-        </form>
             <script>
                 function myFunction() {
                   var x = document.getElementById("myTopnav");
@@ -84,7 +69,7 @@
                 }
                 </script>
         </body>
-    <div class="footer">
-        <p>est 2023</p>
-    </div>
+        <div class="footer">
+            <p>est 2023</p>
+        </div>
 </html>
