@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <title>Welcome to Luigi's Pizzeria</title>
-            <link rel="stylesheet" href="css/style2.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-
-            <!-- <link rel="stylesheet" href="fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf" type="text/css"> -->
-
-        </head>
-        <body>
-            <div class="container-fluid" id="topmenu">
-                <div class="container">
-                    <div id="header">
-                            <h1><p id="logo">Luigi's Pizzeria</p></h1>
-                    </div>
-                    <nav class="topnav" id="myTopnav">
-                        <a href="/index.html">Home</a>
-                        <a href="/locations.html">Locations</a>
-                        <a href="/pizza.html">Pizza!</a>
-                        <a href="/aboutus.html">AboutUs</a>
-                        <a href="/register.html">Register</a>
-                        <a href="/login.html">Login</a>
-
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Luigi's Pizzeria</title>
+        <link rel="stylesheet" href="css/style_locations.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <!-- <link rel="stylesheet" href="fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf" type="text/css"> -->
+    </head>
+    <body>
+        <div class="container-fluid" id="topmenu">
+            <div class="container">
+                <div id="header">
+                        <h1><p id="logo">Luigi's Pizzeria</p></h1>
                 </div>
-            </div>
+                <nav class="topnav" id="myTopnav">
+                    <a href="/index.html">Home</a>
+                    <a href="/locations.html">Locations</a>
+                    <a href="/pizza.html">Pizza!</a>
+                    <a href="/aboutus.html">AboutUs</a>
+                    <a href="/register.html">Register</a>
+                    <a href="/login.html">Login</a>
 
-    <div id="map">
-        <h1>Our Locations</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12058.265992522625!2d-73.857494!3d40.92525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f2a4e610c10f%3A0x314ba3251cc08e5c!2sPizza%20In%20the%20Square!5e0!3m2!1sen!2sus!4v1678907965427!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade" name="Luigi's Pizzeria"></iframe>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container" id="map-container">
+            <h2 p class="location-body">Where it all started...</p></h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12058.265992522625!2d-73.857494!3d40.92525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f2a4e610c10f%3A0x314ba3251cc08e5c!2sPizza%20In%20the%20Square!5e0!3m2!1sen!2sus!4v1678907965427!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade" name="Luigi's Pizzeria"></iframe>
+            </div>
+            <h2 p class="location-body">Please visit all our pizzerias!</h2>
+        </div>
+        <ul class="grid-container">
+            <li class="item">
+                <button type="button" class="btn btn-primary"><p>Di Fara's</p></button><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.2201490481925!2d-73.9615228!3d40.6250267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244c844866933%3A0xbde74981ea7251bf!2sDi%20Fara%20Pizza!5e0!3m2!1sen!2sus!4v1678937159076!5m2!1sen!2sus" width="350px" height="350px" border="10px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Di Fara's">
+                </iframe>
+            </li>
+            <li class="item"><p>L & B Spumoni Gardens</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24236.737846077755!2d-74.01529035494994!3d40.594755356403105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2445522653dab%3A0xbd45b8d4c4d774c9!2sL%26B%20Spumoni%20Gardens!5e0!3m2!1sen!2sus!4v1678938503958!5m2!1sen!2sus" width="350px" height="350px"  border="10px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="L&B Spumoni Gardens"></iframe></li>
+            <li class="item"><p>Lombardi's</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.2201490481925!2d-73.9615228!3d40.6250267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244c844866933%3A0xbde74981ea7251bf!2sDi%20Fara%20Pizza!5e0!3m2!1sen!2sus!4v1678937159076!5m2!1sen!2sus" width="350px" height="350px"  border="10px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Lombardi's"></iframe></li>
+            <li class="item"><p>Lucali</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.643378031834!2d-74.00031840000005!3d40.68182600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a593142dedf%3A0xf29a33ff1f0b6ab7!2sLucali!5e0!3m2!1sen!2sus!4v1678945492491!5m2!1sen!2sus" width="350px" height="350px"  border="10px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Lucali"></iframe></li>
+        </ul>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+    <div class="footer">
+        <a class="nav-link" href="/index.html" aria-current="page">Home</a>
+        <p>est 2023</p>
+        <form>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email" name="email">
+        </form>
     </div>
-    
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-    </script>
-</body>
-<div class="footer">
-    <a class="nav-link" href="/index.html" aria-current="page">Home</a>
-    <p>est 2023</p>
-    <form>
-        <label for="name">Name:</label>
-        <br>
-        <input type="text" id="name" name="name">
-        <br>
-        <label for="email">Email:</label>
-        <br>
-        <input type="text" id="email" name="email">
-    </form>
-</div>
 </html>

@@ -57,7 +57,6 @@ background-color: #ffffff;
     text-decoration: none;
 }
 
-
 .h1 {
 }
 
@@ -115,7 +114,7 @@ a.hover {
     display:none;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .topnav a:not(:first-child) {display:none;}
     .topnav a.icon {
         float:right;
@@ -124,7 +123,7 @@ a.hover {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .topnav.responsive {position:relative;}
     .topnav.responsive a.icon {
         position:sticky;
@@ -189,31 +188,72 @@ a.hover {
 }
 */
 
-ul {
-    display:flex;
-}
-
-ul li {
-    margin: 2px;
-    padding:2px;
-    list-style-type: none;
-}
-
-ul li:hover {
-    /*border:#ffffff 1.5px solid;*/
-    background-color: #000000;
-    font-style: normal;
-}
 
 /* Set the size of the div element that contains the map */
-#map {
-    display:inline;
-    height: 400px; /* The height is 400 pixels */
+
+#map-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Lobster, lobster-regular;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.location-body {
+    font-size: 6vh;
+    margin:10px;
+}
+
+.map {
+    display:flex;
+    height: 100%; /* The height is 400 pixels */
     width: 100%; /* The width is the width of the web page */
-  }
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: 100%;
+    font-family: Lobster, lobster;
+    text-align: center;
+    font-size: 3vh;
+    background: #20ffb1;
+    border: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; 
+}
+
+.btn-primary {
+    padding:5px;
+    border-width: 100%;
+    background-color: #20ffb1;
+    font-family: Lobster, lobster-regular;
+    font-size: 30px;
+    font-weight:200;
+    text-decoration:none;    
+}
 
 .iframe {
-    display:flex
+    display:flex;
     /*style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"
 */}
 

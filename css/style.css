@@ -37,7 +37,8 @@ background-color: #000000;
     font-family: Lobster, Lobster-Regular;
     font-size: 5.5vh;
     color:#ffffff;
-    top:0
+    top:0;
+    background-color: #000000;
 }
 #
 
@@ -49,16 +50,15 @@ background-color: #000000;
     justify-content: center;
     align-content: space-around;
     font-family: Lobster, Lobster-Regular;
-    font-size: 6vh;
     color:#ffffff;
     margin:0;
     padding:0;
     text-decoration: none;
 }
 
-
 .h1 {
 }
+
 
 #logo:hover {
     display:block;
@@ -77,13 +77,13 @@ a.hover {
     color: #20ffb1;
 }
 
-
 .topnav {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     background-color: #000000;
     overflow:hidden;
     justify-content:center;
-    flex-grow: 1;
 }
 
 .topnav a {
@@ -93,7 +93,7 @@ a.hover {
     font-family: Lobster;
     justify-content: center;
     text-align: center;
-    padding:14px 6px;
+    padding:10px;
     font-size: 1.5em;
     font-weight: 100;
     text-decoration: none;
@@ -114,27 +114,34 @@ a.hover {
     display:none;
 }
 
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:550px) {
     .topnav a:not(:first-child) {display:none;}
     .topnav a.icon {
-        float:right;
+        float:none;
         display:block;
         color:#20ffb1;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:550px) {
     .topnav.responsive {position:relative;}
     .topnav.responsive a.icon {
-        position:sticky;
+        position:absolute;
         left:0;
         top:0;
     }
     .topnav.responsive a {
-        float:none;
+        float:left;
         display:block;
         text-align:center;
     }
+}
+
+
+
+.wallpaper {
+    width: 100%;
 }
 
 /*
@@ -204,10 +211,6 @@ ul li:hover {
     font-style: normal;
 }
 
-.jumbotron-fluid > .container {
-
-}
-
 .wallpaper {
     display:flex;
     flex-wrap: wrap;
@@ -237,4 +240,9 @@ ul li:hover {
 .footer p {
     color: white;
     
+}
+
+
+.form {
+justify-content: center;    
 }

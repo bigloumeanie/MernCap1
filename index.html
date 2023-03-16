@@ -3,7 +3,8 @@
         <head>
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+            <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
             <title>Welcome to Luigi's Pizzeria</title>
             <link rel="stylesheet" href="css/style.css">
             <link rel="stylesheet" href="css/theme.css">
@@ -19,16 +20,17 @@
                             <h1><p id="logo">Luigi's Pizzeria</p></h1>
                     </div>
                     <nav class="topnav" id="myTopnav">
-                        <a href="/index.html">Home</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <!--<i class="fa-solid fa-pizza-slice" aria-hidden="true"></i>-->
+                            <i class="fa fa-bars"></i>
+                        </a> <a href="/index.html">Home</a>
                         <a href="/locations.html">Locations</a>
                         <a href="/pizza.html">Pizza!</a>
                         <a href="/aboutus.html">AboutUs</a>
                         <a href="/register.html">Register</a>
                         <a href="/login.html">Login</a>
 
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
+                       
                     </nav>
                 </div>
             </div>
@@ -54,17 +56,19 @@
                 </script>
         </body>
     <div class="footer">
-        <a class="nav-link" href="/index.html" aria-current="page">Home</a>
-        <p>est 2023</p>
-        <form>
-            <label for="name">Name:</label>
-            <br>
-            <input type="text" id="name" name="name">
-            <br>
-            <label for="email">Email:</label>
-            <br>
-            <input type="text" id="email" name="email">
-        </form>
+        <div class="container">
+            <a class="nav-link" href="/index.html" aria-current="page">Home</a>
+            <p>est 2023</p>
+            <form>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" id="email" name="email">
+            </form>
+        </div>
     </div>
 </html>
  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
