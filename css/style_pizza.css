@@ -1,0 +1,19 @@
+.pizza-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-container-top {
+    display: flex;
+}
+.img {
+    padding: 10px;
+    margin: 50px;
+}
+
+.section{
+
+}
+.span {
+}

@@ -1,94 +1,76 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-            <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-            <title>Welcome to Luigi's Pizzeria</title>
-            <link rel="stylesheet" href="css/style.css">
-            <link rel="stylesheet" href="css/theme.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-
-            <!-- <link rel="stylesheet" href="fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf" type="text/css"> -->
-
-        </head>
-        <body>
-            <div class="container-fluid" id="topmenu">
-                <div class="container">
-                    <div id="header">
-                            <h1><p id="logo">Luigi's Pizzeria</p></h1>
-                    </div>
-                    <nav class="topnav" id="myTopnav">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <!--<i class="fa-solid fa-pizza-slice" aria-hidden="true"></i>-->
-                            <i class="fa fa-bars"></i>
-                        </a> <a href="/index.html">Home</a>
-                        <a href="/locations.html">Locations</a>
-                        <a href="/pizza.html">Pizza!</a>
-                        <a href="/aboutus.html">AboutUs</a>
-                        <a href="/register.html">Register</a>
-                        <a href="/login.html">Login</a>
-
-                       
-                    </nav>
-                </div>
-            </div>
-
-            <!--Jumbotron-->
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container-med">
-                    <img class="wallpaper" src="images/pizzawp.jpg" alt="Pizza Wallpaper">
-                </div>
-            </div>
-
-            <!--Form for Registering -->
-
-            <script>
-                function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "topnav") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "topnav";
-                  }
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+        <title>Luigi's Pizzeria</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style_index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
                 }
-                </script>
-        </body>
-    <div class="footer">
-        <div class="container">
-            <a class="nav-link" href="/index.html" aria-current="page">Home</a>
-            <p>est 2023</p>
-            <form>
-                <label for="name">Name:</label>
-                <br>
-                <input type="text" id="name" name="name">
-                <br>
-                <label for="email">Email:</label>
-                <br>
-                <input type="text" id="email" name="email">
-            </form>
+            }
+     </script>
+    </head>
+    <body>
+        
+        <div class="container-fluid" id="topmenu">
+            <div class="container">
+                <div id="header">
+                    <h1><p id="logo">Luigi's Pizzeria</p></h1>
+                </div>
+                    <nav class="topnav" id="myTopnav">
+                    <a href="/index.html" class="active">Home</a>
+                    <a href="/locations.html">Locations</a>
+                    <a href="/pizza.html">Pizza!</a>
+                    <a href="/about.html">OurStory</a>
+                    <a href="/login.html">Login</a>
+                    <a href="/cart.html">Cart</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
         </div>
+
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-med">
+                <img class="wallpaper" src="images/pizzawp.jpg" alt="Pizza Wallpaper">
+            </div>
+        </div>
+    
+    
+    </body>
+
+
+
+<div class="site-footer-desktop-primary" data-footer-sticky="">
+    <div class="site-footer-desktop-primary__container container">
+        <ul class="social-accounts">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Social Icons" data-bb-track-action="Click" data-bb-track-label="Facebook, Footer"><span class="fa fa-facebook" aria-hidden="true"></span><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Social Icons" data-bb-track-action="Click" data-bb-track-label="Twitter, Footer"><span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Social Icons" data-bb-track-action="Click" data-bb-track-label="Instagram, Footer"><span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span></a></li>
+        </ul>
+            <div class="subscribe_container">
+                <p>Subcribe to our Weekly Newsletter!</p>
+                <button type="button" class="btn btn-brand" data-popup="inline" data-popup-src="#popup-newsletter-form" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Email Sign Up Trigger Button" data-bb-track-action="Click" data-bb-track-label="Callout, Footer">Email Signup</button>
+            </div>
     </div>
+</div>
 </html>
- <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                        <div class="container" id="navmenu">
-                                <nav class="navbar-nav">
-                                    <ul class="topnav-buttons" role="navigation">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="index.html" aria-current="page">Home</a></li>
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="#contact">Contact</a></li>
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="#products">Pizza</a></li>
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="#login">Login</a></li>
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="#register">Register!</a></li>
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="#about">Our Story</a></li>
-                                        <li class="nav-item"> 
-                                                <a class="nav-link" href="#cart">Cart</a></li>    
-                                    </ul>
-                                </nav>
-                            -->
+
+
+
+
