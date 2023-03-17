@@ -161,7 +161,7 @@ a.hover {
 }
 
 .site-footer-desktop-primary__container container {
-display: flex;
+    display: flex;
 }
 
 .social-accounts {

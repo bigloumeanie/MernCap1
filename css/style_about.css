@@ -1,3 +1,13 @@
 .table {
-    
-}
+    font-family: 'Courier New', Courier, monospace;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 53px solid purple;
+  }
+  
+ .th,
+ .td {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+  }
