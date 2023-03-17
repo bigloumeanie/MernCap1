@@ -146,10 +146,10 @@ a.hover {
 }
 
 .site-footer-desktop-primary {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #000000;
     color: white;
     text-align: center;
@@ -168,11 +168,11 @@ display: flex;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top:15px;
 }
 
 .social-accounts li {
     flex-grow:.12;
+    padding-top: 12px;
 }
 
 .social-accounts a {

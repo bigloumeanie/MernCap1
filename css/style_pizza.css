@@ -1,5 +1,5 @@
 .pizza-container {
-    display:flex;
+    display:block;
     justify-content: center;
     align-items: center;
 }
@@ -16,4 +16,8 @@
 
 }
 .span {
+}
+
+.food-menu {
+    display:flex;
 }
