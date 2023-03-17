@@ -1,0 +1,88 @@
+.form-module {
+    position: relative;
+    background: #d3d3d3;
+    width: 100%;
+    border-top: 5px solid #20ffb1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-family: Fira Sans, fira sans-regular;
+    font-size: larger;
+}
+
+.form-module .toggle {
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: #20ffb1;
+    width: 30px;
+    height: 30px;
+    margin: -5px 0 0;
+    color:#ffffff;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.form-module .form {
+    display:none;
+    padding: 40px;
+}
+
+.form-module .form:nth-child(2) {
+    display: block;
+}
+
+.form-module h2 {
+    margin: 0 0 20px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height:1;
+    text-align: center;
+}
+
+.form-module input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9d9;
+    margin: 0 0 20px;
+    padding:10px 15px;
+    transition: .3s ease;
+}
+
+.form-module input:focus {
+    border: 1px solid #20ffb1;
+    color: #000000;
+}
+
+.form-module button {
+    cursor: pointer;
+    background: #20ffb1;
+    width:100%;
+    border:0;
+    padding: 10px 15px;
+    color:#000000;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.form-module button:hover {
+    background: #20ffb1;
+}
+
+.form-module .cta {
+    background: #ffffff;
+    width: 100%;
+    padding:15px 40px;
+    color: #666666;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form-module .cta a {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+}

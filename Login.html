@@ -8,10 +8,12 @@
         <title>Luigi's Pizzeria</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/style_login.css">
+        <link rel="stylesheet" href="js/login.js">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+
         <script>
             function myFunction() {
                 var x = document.getElementById("myTopnav");
@@ -31,11 +33,11 @@
                     <h1><p id="logo">Luigi's Pizzeria</p></h1>
                 </div>
                     <nav class="topnav" id="myTopnav">
-                    <a href="/index.html" class="active">Home</a>
+                    <a href="/index.html">Home</a>
                     <a href="/locations.html">Locations</a>
                     <a href="/pizza.html">Pizza!</a>
                     <a href="/about.html">OurStory</a>
-                    <a href="/login.html">Login</a>
+                    <a href="/login.html" class="active">Login</a>
                     <a href="/cart.html">Cart</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
@@ -45,9 +47,35 @@
         </div>
 
 
+<!--FORM CONTENT-->
 
-    
-    
+        <div class="module form-module">
+            <div class="toggle">
+<!--ADD ICON--> <i class="fa "></i>
+            </div>
+
+            <div class="form">
+                <h2>Login to your account</h2>
+                <form>
+                    <input type="text" placeholder="Username" id="Username"/>
+                    <input type="password" placeholder="Password" id="Password">
+                    <button>Login</button>
+                </form>
+            </div>
+
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Username" id="Username" />
+                    <input type="password" placeholder="Password" id="Password" />
+                    <input type="email" placeholder="Email Address" id="Email" />
+                    <input type="tel" placeholder="Tel" id="Phone" />
+                    <button>Register!</button>
+                </form>
+            </div>
+            
+            <div class="cta"> <a href="#"> Forgot Password?</a> </div>
+
+
     </body>
 
 
