@@ -10,3 +10,10 @@
     justify-content: center;
     align-items: center;
 }
+
+#delivery_container {
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    font-family: Comfortaa, comfortaa-medium;
+}

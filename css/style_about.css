@@ -1,13 +1,17 @@
-.table {
-    font-family: 'Courier New', Courier, monospace;
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 53px solid purple;
-  }
-  
- .th,
- .td {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-  }
+#about_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:#000000;
+    font-weight: bold;
+    font-family: Comfortaa, comfortaa-medium;
+    padding: 10px 0 10px 10px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}

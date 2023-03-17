@@ -7,7 +7,7 @@
         <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
         <title>Luigi's Pizzeria</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/style_pizza.css">
+        <link rel="stylesheet" href="css/style_locations.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
@@ -34,12 +34,11 @@
                     <h1><p id="logo">Luigi's Pizzeria</p></h1>
                 </div>
                     <nav class="topnav" id="myTopnav">
-                    <a href="/index.html">Home</a>
-                    <a href="/locations.html">Locations</a>
-                    <a href="/pizza.html" class="active">Pizza!</a>
-                    <a href="/about.html">OurStory</a>
-                    <a href="/login.html">Login</a>
-                    <a href="/cart.html">Cart</a>
+                    <a href="index.html">Home</a>
+                    <a href="locations.html">Locations</a>
+                    <a href="pizza.html" class="active">Pizza!</a>
+                    <a href="about.html">OurStory</a>
+                    <a href="login.html">Login</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -48,31 +47,38 @@
         </div>
 
         <div class="pizza-container">
-            <div class="pizza-container-top" id="pizza-icons">
-                <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="pizza slice" width="75" height="75"/>
-                <img src="https://cdn-icons-png.flaticon.com/512/1205/1205772.png" alt="pizza pie" width="75" height="75"/>
-                <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37823/preview.svg" alt="soda cup" width="75" height="75"/>
-                <img src="https://img.freepik.com/premium-vector/food-delivery-man-riding-green-scooter_32996-849.jpg?w=2000" alt="Delivery boy on motorcycle" width="175" height="175"/>
-                <section class="picture-border">
-                <p><span class="material-symbols-outlined">
-                    local_pizza
-                    </span></p>
-                    <span class="material-symbols-outlined">
-                        fastfood
-                        </span>
-                        <span class="material-symbols-rounded">
-                            shopping_bag
-                            </span>
+                <label for="pet-select">Choose your favorite type of Pizza:</label>
 
-            </div>
-            <div class="food-menu">
-                <ul class="food-chart">
-                    <li><p>Regular Slice</p></li>
-                </ul>
-
+                <select name="favorite_pizza" id="pizza-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Margherita">Margherita</option>
+                    <option value="Pepperoni">Pepperoni</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Sausage">Sausage</option>
+                    <option value="Meatball">Meatball</option>
+                    <option value="Veggie">Veggie</option>
+                    <option value="Sicilian">Veggie</option>
+                    <option value="Pineapple & Ham">Pineapple & Ham</option>
+                </select>
             </div>
         </div>
 
+        <ul class="grid-container">
+            <li class="item">
+                <button type="button" class="btn btn-primary"><p>Regular Pizza</p></button><iframe src="https://asimplepalate.com/wp-content/uploads/2018/03/thin-crust-cauliflower-pizza-5-350x350.jpg" width="350px" height="350px" border="10px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Di Fara's"></iframe>
+            </li>
+            <li class="item">
+                <button type="button" class="btn btn-primary"><p>Sicilian Pizza</a></p></button><iframe src="https://s3-media0.fl.yelpcdn.com/bphoto/iHAqiopHtrbNB9KqjXcA0g/348s.jpg" width="350px" height="350px"  border="10px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="L&B Spumoni Gardens"></iframe>
+            </li>
+            
+            <li class="item">
+                <button type="button" class="btn btn-primary"><p>Pepperoni</p></button><iframe src="https://resources.cleanitsupply.com/MEDIUM/FOODSERVICEDIRECT/10072180685923.JPG" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Lombardi's"></iframe></iframe>
+            </li>
+            
+            <li class="item">
+                <button type="button" class="btn btn-primary"><p>Veggie Pizza</a></p></button><iframe src="https://www.wifemamafoodie.com/wp-content/uploads/2016/07/Grilled-Veggie-Pizza-preake-350x350.jpg" width="350px" height="350px"  border="10px"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Lucali"></iframe>
+            </li>
+        </ul>
 
     </body>
 

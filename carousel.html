@@ -7,7 +7,7 @@
         <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
         <title>Luigi's Pizzeria</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/style_index.css">
+        <link rel="stylesheet" href="css/style_carousel.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
@@ -24,18 +24,25 @@
      </script>
     </head>
     <body>
-        
+        <form action="/action_page.php" method="post">
+
+            <input type="checkbox" id="record" name="3000" value="Record">
+
+            <label for="record">$24.99 </label>
+
+        </form>
         <div class="container-fluid" id="topmenu">
             <div class="container">
                 <div id="header">
                     <h1><p id="logo">Luigi's Pizzeria</p></h1>
                 </div>
                     <nav class="topnav" id="myTopnav">
-                        <a href="index.html">Home</a>
-                        <a href="locations.html">Locations</a>
-                        <a href="pizza.html" class="active">Pizza!</a>
-                        <a href="about.html">OurStory</a>
-                        <a href="login.html">Login</a>
+                    <a href="/index.html" class="active">Home</a>
+                    <a href="/locations.html">Locations</a>
+                    <a href="/pizza.html">Pizza!</a>
+                    <a href="/about.html">OurStory</a>
+                    <a href="/login.html">Login</a>
+                    <a href="/cart.html">Cart</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -43,19 +50,42 @@
             </div>
         </div>
 
-
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container-med">
-                <img class="wallpaper" src="images/pizzawp.jpg" alt="Pizza Wallpaper">
+        <div class="wrapper">
+            <nav class="lil-nav">
+              <a href="#image-1">
+                <img class="lil-nav__img" src="images/pepperoni.jpg" alt="Pepperoni" />
+              </a>
+              <a href="#image-2">
+                <img class="lil-nav__img" src="images/pizza_table.jpg" alt="Pizza Table" />
+              </a>
+              <a href="#image-3">
+                <img class="lil-nav__img" src="images/pizza1.jpg" alt="Galaxies" />
+              </a>
+              <a href="#image-4">
+                <img class="lil-nav__img" src="images/pizzapie2.jpg" alt="Motel" />
+              </a>
+              <a href="#image-5">
+                <img class="lil-nav__img" src="images/pizza_upclose.jpg" alt="Minimalist nightmare" />
+              </a>
+              <a href="#image-6">
+                <img class="lil-nav__img" src="images/pizza_neon.jpg" alt="Hoops" />
+              </a>
+            </nav>
+          
+            <div class="gallery">
+              <img class="gallery__img" id="image-1" src="images/pepperoni.jpg" alt="Pepperoni" />
+              <img class="gallery__img" id="image-2" src="images/pizza_table.jpg" alt="Pizza Table" />
+              <img class="gallery__img" id="image-3" src="images/pizza1.jpg" alt="Pizza 1" />
+              <img class="gallery__img" id="image-4" src="images/pizzapie2.jpg" alt="Pizza Pie 2" />
+              <img class="gallery__img" id="image-5" src="images/pizza_upclose.jpg" alt="Pizza upclose" />
+              <img class="gallery__img" id="image-6" src="images/pizza_neon.jpg" alt="Pizza Neon" />
             </div>
-        </div>
-    <div class="container" id="delivery_container">
-        <h2>We now Deliver!
-        </br>Hurry and Call 
-        </br>867-5309!</h2>
-
-        <img id="delivery_image2" src="https://thumbs.dreamstime.com/z/delivery-pizza-chef-17194980.jpg" alt="Pizza Delivery" width="300" height="300"/>
-    </div>
+          </div>
+          
+          
+          
+          
+    
     
     </body>
 
@@ -70,12 +100,8 @@
         </ul>
             <div class="subscribe_container">
                 <p>Subcribe to our Weekly Newsletter!</p>
-                <a class="btn btn-brand" href="http://www.google.com">Email Signup</a>
+                <button type="button" class="btn btn-brand" data-popup="inline" data-popup-src="#popup-newsletter-form" data-bb-track="button" data-bb-track-on="click" data-bb-track-category="Email Sign Up Trigger Button" data-bb-track-action="Click" data-bb-track-label="Callout, Footer">Email Signup</button>
             </div>
     </div>
 </div>
 </html>
-
-
-
-
